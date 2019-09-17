@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.VerifyLineSetupActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="32dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        android:layout_gravity="bottom|right"
+        android:id="@+id/mcvCapture"
+        android:layout_margin="16dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_camera_black_24dp"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <include layout="@layout/content_verify_line_setup" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

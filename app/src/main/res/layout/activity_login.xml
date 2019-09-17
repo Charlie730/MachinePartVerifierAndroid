@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Activities.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/relHeader"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="100dp"
+            app:cardBackgroundColor="#000000"
+            app:cardCornerRadius="32dp"
+            android:id="@+id/mcvIcon"
+            android:layout_margin="16dp"
+            android:layout_height="100dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_launcher_foreground"
+                android:scaleX="1.5"
+                android:scaleY="1.5" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/mcvIcon"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/colorAccent"
+            android:text="Welcome!"
+            android:id="@+id/welcome"
+            android:textSize="32sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/mcvIcon"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/colorAccent"
+            android:text="Part Verifier for Android"
+            android:textSize="22sp"
+            android:layout_below="@id/welcome"
+            />
+    </RelativeLayout>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        app:cardCornerRadius="22dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/mcvLoginInit"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#000000">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:textSize="22sp"
+            android:textColor="@color/colorAccent"
+            android:padding="10dp"/>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="32dp"
+        android:id="@+id/mcvLoginForm"
+        app:cardBackgroundColor="#000000"
+        android:layout_margin="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Log in"
+                android:textSize="22sp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/colorAccent"/>
+            <EditText
+                android:textColorHint="@color/colorAccent"
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:background="@drawable/circle"
+                android:padding="7dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:layout_height="wrap_content"
+                android:id="@+id/editName"
+                android:layout_marginBottom="7dp"
+                android:hint="Last Name, First name"/>
+            <EditText
+                android:textColorHint="@color/colorAccent"
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:background="@drawable/circle"
+                android:layout_marginBottom="7dp"
+                android:padding="7dp"
+                android:id="@+id/editBNumber"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:layout_height="wrap_content"
+                android:hint="Badge Number"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                app:cardCornerRadius="22dp"
+
+                android:id="@+id/mcvLoginButton"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorAccent">
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Continue"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:padding="10dp"/>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:id="@+id/mcvDecisionForm"
+        android:visibility="gone"
+        app:cardBackgroundColor="@android:color/black"
+        app:cardCornerRadius="32dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Welcome User! What are we going to verify?"
+                android:textColor="@color/colorAccent"
+                android:textSize="22sp"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorAccent"
+                android:id="@+id/mcvFullLineButton"
+                app:cardCornerRadius="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Full Line Setup"
+                    android:layout_margin="8dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="22sp"/>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorAccent"
+                app:cardCornerRadius="16dp"
+                android:id="@+id/mcvSingleReelButton"
+                android:layout_marginTop="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Single Reel"
+                    android:layout_margin="8dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="22sp"/>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

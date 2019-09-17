@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "602109893287",
+    "firebase_url": "https://machinepartverifierandroid.firebaseio.com",
+    "project_id": "machinepartverifierandroid",
+    "storage_bucket": "machinepartverifierandroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602109893287:android:31206b40b98411cf",
+        "android_client_info": {
+          "package_name": "com.humminbird.machinepartverifierandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602109893287-97o6ima9t7hlr67h8nhiv9cr31t2sflp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.humminbird.machinepartverifierandroid",
+            "certificate_hash": "2ac5093134e12e26a7acebf8fc7dfa2aa105aa05"
+          }
+        },
+        {
+          "client_id": "602109893287-7jqgak1mdcupmmuq29o5rgrgt7pir8av.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIIvesefKxxVIUWmLlz6GojGq1a8wGZk4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602109893287-7jqgak1mdcupmmuq29o5rgrgt7pir8av.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
